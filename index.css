@@ -1,0 +1,334 @@
+.main_container_for_all_boxes {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.top_heading_content {
+    font-family: 'SF Pro Display Bold', sans-serif;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #001219;
+    text-transform: capitalize;
+}
+
+.icon {
+    border: 1px solid #00b4d8;
+    padding: 25px;
+    margin: 25px;
+
+    border: 1px solid #e8eaec;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.icon_box {
+    display: flex;
+}
+
+.main_img_box {
+    width: 80%;
+}
+
+.img_center {
+    width: 100%;
+}
+
+.inner_download_content_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.inner_download_head {
+    font-family: 'SF Pro Display Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #001219;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.inner_download_para {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.inner_download_btn {
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+
+    height: 60px;
+    background: #00b4d8;
+    border-radius: 200px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.0025em;
+    color: #ffffff;
+    border: 2px solid #00b4d8;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+
+.accordion {
+    background: #FFFFFF;
+    border-top: 1px solid #EBEEF0;
+    border-left: 1px solid rgb(235, 234, 234);
+    border-right: 1px solid rgb(235, 234, 234);
+
+    border-bottom: none;
+
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 12px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+
+
+
+}
+
+
+.panel {
+    background-color: #ffffff;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #001219;
+    border-radius: 12px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+
+
+
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 1px solid #EBEEF0;
+    border-left: 1px solid rgb(235, 234, 234);
+    border-right: 1px solid rgb(235, 234, 234);
+
+    border-top: none;
+
+    letter-spacing: 0.02em;
+    padding-left: 15px;
+    /* margin: 1px; */
+    color: #637381;
+
+}
+
+.faqs_box {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.active_icon {
+    border: 1px solid #00b4d8;
+    box-shadow: 0px 16px 24px rgba(0, 180, 216, 0.1);
+    border-radius: 16px;
+    padding: 25px;
+    margin: 25px;
+}
+
+@media (max-width: 1000px) {
+    .main_container_for_all_boxes {
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .top_heading {
+        margin: auto;
+    }
+
+    .top_heading_content {
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .icon_box {
+        margin: auto;
+
+    }
+
+    .icon {
+        padding: 20px;
+        margin: 20px;
+
+    }
+
+    .faqs_box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .main_container_for_all_boxes {
+        width: 100%;
+        margin: auto;
+
+
+    }
+
+    .top_heading {
+        margin: auto;
+    }
+
+    .top_heading_content {
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .icon_box {
+        margin: auto;
+
+    }
+
+    .icon {
+        padding: 15px;
+        margin: 15px;
+
+    }
+
+    .inner_download_btn {
+        width: 60%;
+
+    }
+
+    .faqs_box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_container_for_all_boxes {
+        width: 100%;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+
+
+    }
+
+    .top_heading {
+        margin: auto;
+    }
+
+    .top_heading_content {
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .icon_box {
+        margin: auto;
+
+    }
+
+    .icon {
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+    .inner_download_btn {
+        width: 60%;
+
+    }
+
+    .faqs_box {
+        width: 90%;
+
+    }
+
+}
+
+@media (max-width: 375px) {
+    .main_container_for_all_boxes {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        column-gap: 30px;
+        padding-left: 7px;
+        padding-right: 7px;
+
+
+    }
+
+    .top_heading {
+        margin: auto;
+    }
+
+    .top_heading_content {
+        margin: auto;
+        text-align: center;
+    }
+
+    .icon_box {
+        margin: auto;
+
+    }
+
+    .icon {
+        padding: 9px;
+        margin: 9px;
+
+    }
+
+    .inner_download_btn {
+        width: 60%;
+
+
+    }
+
+    .faqs_box {
+        width: 100%;
+    }
+}

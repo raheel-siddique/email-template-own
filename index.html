@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="main_container_for_all_boxes">
+        <div class="top_heading">
+            <h1 class="top_heading_content">Welcome To Dome!</h1>
+        </div><br>
+
+        <div class="icon_box">
+            <div class=icon onclick="appleIconDownload('Mac')" id="for_mac">
+                <img src="./apple_ic.svg" alt="apple" width='48' height='48' />
+            </div>
+            <div class='icon' onclick="appleIconDownload('Windows')" id="for_Windows">
+                <img src="./windows_ic.svg" alt="windows" width='48' height='48' />
+            </div>
+            <div class='icon' onclick="appleIconDownload('Ios')" id="for_Ios">
+                <img src="./iOS-ic.svg" alt="ios" width='48' height='48' />
+            </div>
+            <div class='icon' onclick="appleIconDownload('Android')" id="for_Android">
+                <img src="./android_ic.svg" alt="android" width='48' height='48' />
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="main_img_box">
+            <img src="./blue-image-frame.svg" alt="" class="img_center">
+        </div>
+        <div class="inner_download_content_box">
+            <h1 class="inner_download_head" id="heading_operating_sys">PureDome For Android</h1>
+            <p class="inner_download_para">Protect Data Traffic and get Simple and secure remote access with our
+                easy-to-use macOS app.Purchase
+                dedicated fixed IP Servers from your buisness COnsole on our Advance Plan.</p>
+            <button class="inner_download_btn" id="btn_text_download_icons">Download For Mac</button>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="faqs_box">
+            <h1 class="inner_download_head">Frequently Asked Questions</h1>
+
+
+            <button class="accordion">What payment options are available?</button>
+            <div class="panel">
+                <p>You can pay via Credit Card or PayPal, depending on your convenience.</p>
+            </div>
+
+            <button class="accordion">Do you offer pricing packages??</button>
+            <div class="panel">
+                <p>Instead of restricting businesses to choose from a specific set of packages, we allow you to
+                    customize your own package based on your business needs and aspirations.</p>
+            </div>
+
+            <button class="accordion">Do you offer a free trial?</button>
+            <div class="panel">
+                <p>Yes, we offer a 7-day free trial for users to experience our multilayered cyber security functions
+                    and make an informed decision for their business.</p>
+            </div>
+
+            <button class="accordion">Is there a money-back guarantee?</button>
+            <div class="panel">
+                <p>Yes, we offer a 30-day money back guarantee.</p>
+            </div>
+
+
+
+
+            <button class="accordion">What happens if I want to add additional features to my package?</button>
+            <div class="panel">
+                <p>You will be able to upgrade your package and features from the admin console. Your invoice will
+                    be updated automatically.</p>
+            </div>
+
+
+            <button class="accordion">Will I be able to cancel my subscription?</button>
+            <div class="panel">
+                <p>Yes, your subscription can be revoked at any time.</p>
+            </div>
+
+
+            <button class="accordion">How often will I be charged?</button>
+            <div class="panel">
+                <p>You can choose to pay on a monthly or annual basis. Your subscription will be recurrent</p>
+            </div>
+
+
+            <button class="accordion">Is my subscription recurrent in nature?</button>
+            <div class="panel">
+                <p>Yes, your subscription will be recurrent.</p>
+            </div>
+
+
+
+            <button class="accordion"> How will I pay for my first subscription?
+            </button>
+            <div class="panel">
+                <p>The process to subscribe to our service is very simple: Step 1: Customize your plan and calculate
+                    its total price Step 2: Follow the simple steps to register your account Step 3: Purchase our
+                    subscription plan to start your cybersecurity journey.</p>
+            </div>
+
+
+        </div>
+        <div class="faqs_box"></div>
+
+
+
+
+    </div>
+</body>
+<script>
+    var headOperatingSys = 'Mac'
+    document.getElementById('heading_operating_sys').innerHTML = `download For ${headOperatingSys}`
+    document.getElementById('btn_text_download_icons').innerHTML = `download For ${headOperatingSys}`
+    document.getElementById("for_mac").classList.add("active_icon");
+
+    const removeClassess = () => {
+
+    }
+
+    const appleIconDownload = (name) => {
+        headOperatingSys = name
+        document.getElementById('heading_operating_sys').innerHTML = `download For ${headOperatingSys}`
+        document.getElementById('btn_text_download_icons').innerHTML = `download For ${headOperatingSys}`
+        if (name === 'Mac') {
+            document.getElementById("for_mac").classList.add("active_icon");
+            document.getElementById("for_Windows").classList.remove("active_icon");
+            document.getElementById("for_Ios").classList.remove("active_icon");
+            document.getElementById("for_Android").classList.remove("active_icon");
+
+
+
+
+        } else if (name === 'Windows') {
+            document.getElementById("for_Windows").classList.add("active_icon");
+            document.getElementById("for_mac").classList.remove("active_icon");
+            document.getElementById("for_Ios").classList.remove("active_icon");
+            document.getElementById("for_Android").classList.remove("active_icon");
+
+
+
+
+
+        }
+
+        else if (name === 'Ios') {
+            document.getElementById("for_Ios").classList.add("active_icon");
+            document.getElementById("for_mac").classList.remove("active_icon");
+            document.getElementById("for_Windows").classList.remove("active_icon");
+            document.getElementById("for_Android").classList.remove("active_icon");
+
+
+
+
+
+        }
+        else if (name === 'Android') {
+            document.getElementById("for_Android").classList.add("active_icon");
+
+            document.getElementById("for_Ios").classList.remove("active_icon");
+            document.getElementById("for_mac").classList.remove("active_icon");
+            document.getElementById("for_Windows").classList.remove("active_icon");
+
+        }
+
+
+    }
+
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+
+</script>
+
+</html>
